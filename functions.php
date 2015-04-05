@@ -9,7 +9,7 @@
  * @return string
  */
 function computers_throw() {
-    return 'paper';
+    return '';
 }
 
 /**
@@ -22,5 +22,5 @@ function computers_throw() {
  * @return string
  */
 function who_wins( $users_throw, $computers_throw) {
-    return 'Who Wins?';
+    return '';
 }

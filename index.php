@@ -23,5 +23,3 @@ $data = [
 $results_view = ( $user_throw AND $computers_throw AND $winner ) ? $view->output( 'results', $data ) : false;
 
 echo $view->output( 'home', array( 'results_view' => $results_view ) );
-
-
