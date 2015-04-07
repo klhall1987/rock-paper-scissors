@@ -25,9 +25,11 @@
         </p>
 
         <ul>
-            <li><a href="?throw=rock">Rock</a></li>
-            <li><a href="?throw=paper">Paper</a></li>
-            <li><a href="?throw=scissors">Scissors</a></li>
+            <li><a href="?throw=Rock">Rock</a></li>
+            <li><a href="?throw=Paper">Paper</a></li>
+            <li><a href="?throw=Scissors">Scissors</a></li>
+            <li><a href="?throw=Lizard">Lizard</a></li>
+            <li><a href="?throw=Spock">Spock</a></li>
         </ul>
 
         {results_view}
