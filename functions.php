@@ -23,19 +23,27 @@ function computers_throw() {
  * @return string
  */
 function who_wins( $users_throw, $computers_throw) {
-	   if( $users_throw == 'Rock' && ( $computers_throw == 'Lizard' || $computers_throw == 'Scissors' ) ){
-	   		return 'User Wins Great Job';
-	   }  elseif ($users_throw == 'Paper' && ( $computers_throw == 'Rock' || $computers_throw == "Spock" ) ){
-	   		return 'User Wins Great Job';
-	   }  elseif ( $users_throw == 'Scissors' && ( $computers_throw == 'Lizard' || $computers_throw == 'Paper' ) ) {
-	   		return 'User Wins Great Job';
-	   }  elseif ( $users_throw == 'Lizard' && ( $computers_throw == 'Spock' || $computers_throw == 'Paper' ) ) {
-	   		return 'User Wins Great Job';
-	   }  elseif ( $users_throw == 'Spock' && ( $computers_throw == 'Rock' || $computers_throw == 'Scissors' ) ) {
-	   		return 'User Wins Great Job';
-	   }  elseif ( $users_throw == $computers_throw ) {
-	   		return "It's a Tie!!";
-	   }  else {
-	   		return 'Computer Wins, nice try!';
-	   }
+	$user_Wins = 'User Wins, Great Job!!!';
+	$tie = 'You tied try again!'; 
+	$computer_Win = 'The Computer Wins, Play again!!';
+
+	switch ($users_throw) {
+		case 'Rock':
+			if ( $computers_throw == 'Scissors' || $computers_throw == 'Lizard' ){
+			return $user_Wins; } else {	return $computer_Win; 	}
+		case 'Paper':
+			if ( $computers_throw == 'Rock' || $computers_throw == 'Spock' ){
+				return $user_Wins; } else {	return $computer_Win; 	}
+		case 'Scissors':
+			if ( $computers_throw == 'Lizard' || $computers_throw == 'Paper' ){
+				return $user_Wins; } else {	return $computer_Win; 	}
+		case 'Lizard':
+			if ( $computers_throw == 'Spock' || $computers_throw == 'Paper' ) {
+				return $user_Wins; } else {	return $computer_Win; 	}
+		case 'Spock':
+			if ( $computers_throw == 'Rock' || $computers_throw == 'Scissors' ) {
+				return $user_Wins; } else {	return $computer_Win; 	}
+		}
+
+
 }
